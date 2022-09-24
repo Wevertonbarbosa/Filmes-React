@@ -20,4 +20,4 @@ const MovieCard = ({movie, showLink = true}) => {
   )
 }
 
-export default MovieCard
+export default MovieCard;

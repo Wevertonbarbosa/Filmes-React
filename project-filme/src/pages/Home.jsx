@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import MovieCard from '../components/MovieCard';
 
 import './MovieGrid.css'
+import Slide from './Slide';
 
 //Importando a URL da API pelo Vite e aramazenado em uma variavel
 const moviesURL = import.meta.env.VITE_API;
@@ -31,7 +32,9 @@ const Home = () => {
     }, []);
 
     return (
+
         <div className="container">
+            <Slide/>
             <h2 className="title">Melhores Filmes:</h2>
             <div className="movies-container">
                 {/* Forma de fazer um Load */}
