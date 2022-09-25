@@ -2,6 +2,8 @@ import {Link} from 'react-router-dom'
 
 import {FaStar} from 'react-icons/fa'
 
+import "./MovieCard.css"
+
 //Url das imagens dos filmes
 const imageUrl = import.meta.env.VITE_IMG
 

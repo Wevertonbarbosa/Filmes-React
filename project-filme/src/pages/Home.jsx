@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import MovieCard from '../components/MovieCard';
 
-import './MovieGrid.css'
+import './MovieGrid.css';
 import Slide from './Slide';
 
 //Importando a URL da API pelo Vite e aramazenado em uma variavel
@@ -32,15 +32,21 @@ const Home = () => {
     }, []);
 
     return (
-
         <div className="container">
-            <Slide/>
-            <h2 className="title">Melhores Filmes:</h2>
+            <Slide />
+            <div className="title-top20">
+                <h1 className="title">Top 20</h1>
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/616/616489.png"
+                    alt="avaliado"/>
+            </div>
             <div className="movies-container">
                 {/* Forma de fazer um Load */}
                 {topMovies.length === 0 && <p>Carregando...</p>}
                 {topMovies.length > 0 &&
-                    topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
+                    topMovies.map((movie) => (
+                        <MovieCard key={movie.id} movie={movie} />
+                    ))}
             </div>
         </div>
     );
