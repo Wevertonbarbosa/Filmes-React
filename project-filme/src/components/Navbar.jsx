@@ -24,7 +24,7 @@ const Navbar = () => {
             <nav id="navbar">
                 <h2>
                     <Link to="/">
-                        <BiCameraMovie /> Well Filmes
+                        <BiCameraMovie id='svg-logo' /> Well <span>Cine</span>
                     </Link>
                 </h2>
                 <form onSubmit={handleSubmit}>
@@ -34,7 +34,7 @@ const Navbar = () => {
                         onChange={(e) => setSearch(e.target.value)}
                         value={search}
                     />
-                    <button type="submit">
+                    <button id='search-svg' type="submit">
                         <BiSearchAlt2 />
                     </button>
                 </form>

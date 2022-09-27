@@ -3,13 +3,34 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
-    background-color: #121212;
+    background-color: black;
+}
+
+#navbar h2:hover {
+    opacity: .8;
 }
 
 #navbar h2 a {
     display: flex;
     align-items: center;
     gap: .5rem;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+
+#navbar span {
+    background: blue;
+    font-family: 'Fredericka the Great', cursive;
+    color: black;
+}
+
+#search-svg {
+    color: black;
+}
+
+
+#navbar a {
+    color: white;
 }
 
 #navbar form {

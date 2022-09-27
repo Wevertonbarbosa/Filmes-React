@@ -1,22 +1,65 @@
 import './slide.css';
-import { useRef, useTransition } from 'react';
 
 const Slide = () => {
-
-    
-
     return (
         <>
+            {/* Carousel Principal */}
+            <div className="main-slide">
+                <div className="master-slide">
+                    <div className="container-header-slide">
+                        <div className="content-carousel">
+                            <div className="conteudo-slide">
+                                <div className="img-main-slide">
+                                    <img
+                                        src="https://images.alphacoders.com/103/1038570.jpg"
+                                        alt="filmes"
+                                    />
+                                </div>
+                                <div className="content-write-slide">
+                                    <h1> Well <span>Cine</span>
+                                    </h1>
+                                    <p>Melhores filmes, melhores séries</p>
+                                    <p>Assista da onde quiser e como quiser.</p>
+                                    <br />
+                                    <div className='content-2-slide-write'>
+                                        <h2>The Witcher</h2>
+                                        <p>Assista a Série The Witcher...</p>
+                                        <p>
+                                            Em The Witcher, série original da
+                                            Netflix, Geralt de Rivia (Henry
+                                            Cavill) é um solitário caçador de
+                                            monstros, que luta para encontrar
+                                            seu lugar num mundo onde pessoas são
+                                            mais crueis que criaturas
+                                        </p>
+                                    </div>
+                                    <div className='btn-write-slide'>
+                                        <button>
+                                            <h3>Trailer</h3>
+                                        </button>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div className='title-slide'>
+            {/* Cards de Slide */}
+
+            <div className="title-slide">
                 <h1>Mais assistidos </h1>
-                <img src="https://cdn-icons-png.flaticon.com/512/7782/7782585.png" alt="" />
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/7782/7782585.png"
+                    alt=""
+                />
             </div>
 
             <div className="container-geral-slide">
                 <div className="subContainer-slide">
-                    <div className="container-slide" >
-                        <div className="carousel" >
+                    <div className="container-slide">
+                        <div className="carousel">
                             <div className="item">
                                 <div className="image">
                                     <img
@@ -172,7 +215,6 @@ const Slide = () => {
                     </div>
                 </div>
             </div>
-
         </>
     );
 };
