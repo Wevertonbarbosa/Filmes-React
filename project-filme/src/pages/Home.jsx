@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import MovieCard from '../components/MovieCard';
+import Formulario from './Formulario';
 
 import './MovieGrid.css';
 import Slide from './Slide';
@@ -47,6 +48,9 @@ const Home = () => {
                     topMovies.map((movie) => (
                         <MovieCard key={movie.id} movie={movie} />
                     ))}
+            </div>
+            <div>
+                <Formulario />
             </div>
         </div>
     );

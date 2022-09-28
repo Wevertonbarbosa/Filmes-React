@@ -1,0 +1,88 @@
+.container-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;    
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    width: 50%;
+    padding: 2em;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.form label {
+    padding: .2em;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+
+.form input {
+    border-radius: 20px;
+    background: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    width: 80%;
+    padding: .7em;
+    border: 1px solid #f7d354;
+}
+
+.form h4 {
+    font-family:'Times New Roman', Times, serif;
+    padding: .7em;
+}
+
+.form textarea {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1em;
+    border-radius: 20px;
+    background-color: black;
+    border: 1px solid #f7d354;
+}
+
+#title-form {
+    text-align: center;
+    margin: 2.8em;
+    column-gap: 20px;
+    padding: 0.4em;
+    border-bottom: 2px solid white;
+    background-color: black;
+    width: 1259px;
+}
+
+#title-form h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.form button {
+    border: 1px solid #f7d354;
+    margin-top: 2em;
+    padding: .7em;
+    width: 20%;
+    background: black;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;    
+    font-weight: 300;
+}
+
+.form button:hover {
+    background: #f7d354;
+    color: black;
+}
+
+#completed {
+    font-family:'Times New Roman', Times, serif;
+    padding: .9em;
+    max-width: 100%;   
+}
