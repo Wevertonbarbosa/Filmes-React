@@ -20,3 +20,38 @@ a {
 a:hover {
     color: #b8930c;
 }
+
+footer {
+    text-align: center;
+    color: white;
+    padding: .6em;
+    background-color: #9b979254;
+}
+
+footer p {
+    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: .5em;
+}
+
+footer img {
+     width: 3%;
+}
+
+footer img:hover {
+    opacity: .7;
+}
+
+
+@media (max-width: 768px) {
+    footer img {
+        width: 5%;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    footer img {
+        width: 10%;
+    }
+}

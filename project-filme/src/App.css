@@ -42,6 +42,8 @@
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 1em;
+    width: 80%;
+    height: 20vw;
     border-radius: 20px;
     background-color: black;
     border: 1px solid #f7d354;
@@ -54,7 +56,7 @@
     padding: 0.4em;
     border-bottom: 2px solid white;
     background-color: black;
-    width: 1259px;
+    width: 90vw;
 }
 
 #title-form h2 {
@@ -85,4 +87,37 @@
     font-family:'Times New Roman', Times, serif;
     padding: .9em;
     max-width: 100%;   
+}
+
+
+@media (max-width: 768px) {
+    .form {
+        padding: 1em;
+    }
+
+    .form button {
+        width: 80%;
+    }
+
+    #completed {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 425px) {
+    .form {
+        width: 100%;
+    }
+
+    .form button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #completed {
+        font-size: unset;
+        padding: 0.8em 0;
+    }
 }

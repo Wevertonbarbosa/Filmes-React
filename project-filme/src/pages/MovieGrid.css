@@ -92,3 +92,40 @@
     font-size: 20px;
     text-align: center;
 }
+
+
+@media (max-width: 425px) {
+    .title-top20 h1 {
+        font-size: x-large;
+    }
+
+    .title-top20 img {
+        width: 17%;
+    }
+
+    .movies-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movies-container div {
+        width: 80%;
+        height: 50%;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .title-top20 h1 {
+        font-size: larger;
+    }
+
+    .movies-container div {
+        width: 90%;
+    }
+
+    .container .title {
+        font-size: medium;
+        padding: 1em;
+    }
+}

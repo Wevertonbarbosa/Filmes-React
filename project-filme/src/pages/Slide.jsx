@@ -21,6 +21,7 @@ const Slide = () => {
                                     <p>Melhores filmes, melhores séries</p>
                                     <p>Assista da onde quiser e como quiser.</p>
                                     <br />
+                                    
                                     <div className='content-2-slide-write'>
                                         <h2>The Witcher</h2>
                                         <p>Assista a Série The Witcher...</p>

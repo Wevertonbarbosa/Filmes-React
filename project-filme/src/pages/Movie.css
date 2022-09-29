@@ -58,3 +58,27 @@
 .description p {
     line-height: 1.4rem;
 }
+
+@media (max-width: 425px) {
+    .movie-page .movie-card img {
+        width: 250px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info h3 {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .tagline {
+        font-size: medium;
+    }
+
+    .description p {
+        font-size: medium;
+    }
+}

@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
+    border-bottom: .4px solid white;
+    border-radius: 40px;
     background-color: black;
 }
 
@@ -60,4 +62,51 @@
 #navbar form button:hover {
     background-color: transparent;
     color: #f7d354;
+}
+
+@media (max-width: 425px) {
+    #navbar {
+        padding: .5em .8em;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    #navbar {
+        padding: 0.5em 0.4em;
+    }
+
+    #navbar h2 {
+        font-size: larger;
+    }
+
+    #navbar form {
+        gap: 0.2rem;
+    }
+
+    #navbar form input {
+        padding: .2em;
+        height: 30px
+    }
+
+    #navbar form button {
+        height: 30px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    #navbar {
+        padding: 0.5em 0.2em;
+    }
+
+    #navbar form input {
+        width: 121px;
+        height: 27px;
+    }
+
+    #navbar form button {
+        height: 27px;
+    }
 }

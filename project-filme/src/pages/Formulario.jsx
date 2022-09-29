@@ -14,7 +14,7 @@ function Formulario() {
         inputValue.value = '';
         textAreaValue.value = '';    
         msgFormSubmit.innerHTML = `Obrigado ${valueForm}, pelo seu Feedback!`;
-        setTimeout(() => msgFormSubmit, 1000);
+        setTimeout(() => msgFormSubmit.remove(), 4000);
         
     };
     
@@ -26,7 +26,7 @@ function Formulario() {
             </div>
 
             <form className="form">
-                <label htmlFor="">Digite seu primeiro nome:</label>
+                <label htmlFor="">Primeiro nome:</label>
                 <input
                     onChange={(e) => setValueForm(e.target.value)}
                     type="text"
@@ -40,14 +40,12 @@ function Formulario() {
                 <textarea
                     placeholder="Deixe seu Feedback..."
                     id="textarea-form"
-                    cols="70"
-                    rows="10"
                     required
                     maxLength={150}
                 ></textarea>
                 <button onClick={handleValue}>Enviar</button>
 
-                <h2 id="completed"></h2>
+                <h3 id="completed"></h3>
             </form>
         </div>
     );
